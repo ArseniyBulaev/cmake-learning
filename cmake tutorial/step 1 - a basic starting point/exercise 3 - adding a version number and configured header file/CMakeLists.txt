@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(basic_project VERSION 1.0)
+set(CXX_STANDARD 11)
+set(CXX_STANDARD_REQUIRED ON)
+add_executable(basic_project main.cpp)
+configure_file(TutorialConfig.h.in TutorialConfig.h)
+target_include_directories(basic_project PUBLIC "${PROJECT_BINARY_DIR}")
