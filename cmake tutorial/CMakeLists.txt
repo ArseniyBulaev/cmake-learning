@@ -4,4 +4,9 @@ set(CXX_STANDARD 11)
 set(CXX_STANDARD_REQUIRED ON)
 add_executable(basic_project main.cpp)
 configure_file(TutorialConfig.h.in TutorialConfig.h)
-target_include_directories(basic_project PUBLIC "${PROJECT_BINARY_DIR}")
+target_include_directories(basic_project PUBLIC
+    "${PROJECT_SOURCE_DIR}/MathFunctions"
+    "${PROJECT_BINARY_DIR}"
+ )
+add_subdirectory(MathFunctions)
+target_link_libraries(basic_project PUBLIC MathFunctions)
