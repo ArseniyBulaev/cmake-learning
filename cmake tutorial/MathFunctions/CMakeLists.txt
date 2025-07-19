@@ -11,3 +11,5 @@ if (USE_MYMATH)
   target_link_libraries(MathFunctions PRIVATE SqrtLibrary)
   target_compile_definitions(MathFunctions PRIVATE "USE_MYMATH")
 endif()
+
+target_include_directories(MathFunctions INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
