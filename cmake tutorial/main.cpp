@@ -12,7 +12,7 @@ int main(int argc, char * argv []){
        std::cout << "square root of " << argv[1] << " equals " << sqrt_value << std::endl;
     }
     else{
-        std::cout << "you haven't specified namber to calculate square root" << std::endl;
+        std::cout << "you haven't specified number to calculate square root" << std::endl;
     }
     return 0;
 }
