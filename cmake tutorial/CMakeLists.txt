@@ -15,3 +15,10 @@ target_include_directories(basic_project PUBLIC
  )
 add_subdirectory(MathFunctions)
 target_link_libraries(basic_project PUBLIC MathFunctions tutorial_compiler_flags)
+
+#install directory used by install()
+set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}/install")
+
+# Install basic_project in the bin directory
+install(TARGETS basic_project DESTINATION bin)
+install(FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h" DESTINATION include)
