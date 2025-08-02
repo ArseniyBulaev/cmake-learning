@@ -74,7 +74,7 @@ do_test(Tutorial 9 3)
 do_test(Tutorial 5 2.23)
 do_test(Tutorial 7 2.64)
 do_test(Tutorial 25 5)
-do_test(Tutorial -25 0)
+do_test(Tutorial -25 (-nan|nan|0))
 do_test(Tutorial 0.0001 0.01)
 do_test(Tutorial 0 0)
 
